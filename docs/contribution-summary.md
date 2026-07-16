@@ -1,13 +1,22 @@
-# สรุปความรับผิดชอบของสมาชิก
+# สรุปเอกสารความรับผิดชอบของสมาชิก
 
-สมาชิกแต่ละคนรับผิดชอบศึกษา อธิบาย และตรวจสอบส่วนที่เกี่ยวข้องตามตาราง โดยตัวอย่างในเอกสารอ้างอิง Source Code ปัจจุบันของโปรเจกต์
+โปรเจกต์แบ่งเอกสารอธิบายงานเป็นรายบุคคลจำนวน 3 ไฟล์ โดยใช้ชื่อนักศึกษาเป็นชื่อไฟล์ แต่ละไฟล์อธิบายฟังก์ชันที่รับผิดชอบ หลักการทำงาน ตัวอย่างโค้ดจริง เหตุผลที่เลือกใช้ ข้อดี และข้อจำกัด
 
-| สมาชิก | React Hooks | ส่วนของระบบ | ไฟล์ที่เกี่ยวข้อง |
-| --- | --- | --- | --- |
-| `[นาย เจษฎารักษ์ วิชาไชย]` `[673450207-3]` | `useReducer`, `useContext` | ตะกร้าสินค้า, CartContext, Reducer, การรวมระบบและ Build | `src/context/CartContext.jsx`, `src/reducers/cartReducer.js`, `src/reducers/cartReducer.test.js`, `src/components/Cart.jsx`, `src/components/CartItem.jsx`, `src/components/OrderSummary.jsx` |
-| `[นายโสภณวิชญ์ แก้วศิลา]` `[673450209-9]` | `useState`, `useMemo` | ค้นหา, กรองหมวดหมู่, รายการสินค้าที่แสดง, จำนวนและยอดรวม | `src/App.jsx`, `src/components/SearchBar.jsx`, `src/components/FilterBar.jsx`, `src/components/ProductList.jsx`, `src/data/menu.js` |
-| `[นาย ปลวัชร สุทธมา]` `[673450473-2]` | `useEffect`, `useCallback`, `useCart`, `useLocalStorage` | Local Storage, callback ของตะกร้า, Custom Hooks และ Responsive | `src/hooks/useCart.js`, `src/hooks/useLocalStorage.js`, `src/context/CartContext.jsx`, `src/components/ProductCard.jsx`, `src/index.css` |
+## เอกสารรายบุคคล
 
-## การเชื่อมโยงงาน
+| ลำดับ | ชื่อ-นามสกุล | รหัสนักศึกษา | React Hooks และส่วนที่รับผิดชอบ | เอกสาร |
+| --- | --- | --- | --- | --- |
+| 1 | นาย เจษฎารักษ์ วิชาไชย | 673450207-3 | `useReducer`, `useContext`, `cartReducer`, `CartContext` และระบบตะกร้า | [เจษฎารักษ์-วิชาไชย.md](เจษฎารักษ์-วิชาไชย.md) |
+| 2 | นายโสภณวิชญ์ แก้วศิลา | 673450209-9 | `useState`, `useMemo`, ระบบค้นหา กรองหมวดหมู่ และแสดงรายการสินค้า | [โสภณวิชญ์-แก้วศิลา.md](โสภณวิชญ์-แก้วศิลา.md) |
+| 3 | นาย ปลวัชร สุทธมา | 673450473-2 | `useEffect`, `useCallback`, `useCart`, `useLocalStorage`, Local Storage และ Responsive | [ปลวัชร-สุทธมา.md](ปลวัชร-สุทธมา.md) |
 
-การค้นหาและกรองใน `App.jsx` ส่งผลให้ `ProductList` แสดงเฉพาะเมนูที่ตรงเงื่อนไข เมื่อผู้ใช้กดเพิ่ม `ProductCard` จะเรียก `addItem` จาก `useCart` แล้ว `CartContext` dispatch Action ไปยัง `cartReducer` State ใหม่ถูกคำนวณยอดรวมด้วย `useMemo` และส่งต่อให้ `Header`, `Cart` และ `OrderSummary` พร้อมบันทึกลง Local Storage ผ่าน `useEffect` ใน Custom Hook
+## ความสัมพันธ์ของงานทั้งสามส่วน
+
+1. ระบบค้นหาและกรองใน `App.jsx` สร้างรายการสินค้าที่ต้องแสดงให้ `ProductList`
+2. เมื่อผู้ใช้กดเพิ่มสินค้า `ProductCard` เรียก `addItem` จาก `useCart`
+3. `CartContext` ส่ง Action ไปยัง `cartReducer` เพื่อสร้าง State ตะกร้าใหม่
+4. `useMemo` คำนวณจำนวนสินค้าและยอดรวมจาก State ล่าสุด
+5. `useLocalStorage` ใช้ `useEffect` บันทึกตะกร้าและโหลดกลับมาเมื่อ Refresh
+6. Component ทั้งหมดใช้ Responsive CSS เพื่อแสดงผลบนมือถือ แท็บเล็ต และคอมพิวเตอร์
+
+รายละเอียดเชิงลึกและตัวอย่าง Source Code อยู่ในเอกสารรายบุคคลทั้งสามไฟล์ด้านบน

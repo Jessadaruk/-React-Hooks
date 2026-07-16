@@ -46,9 +46,9 @@
 coffee-shop-ordering-system/
 ├── docs/
 │   ├── hooks-explanation.md
-│   ├── member-1-hooks.md
-│   ├── member-2-hooks.md
-│   ├── member-3-hooks.md
+│   ├── เจษฎารักษ์-วิชาไชย.md
+│   ├── โสภณวิชญ์-แก้วศิลา.md
+│   ├── ปลวัชร-สุทธมา.md
 │   ├── contribution-summary.md
 │   └── discussion-answers.md
 ├── src/
@@ -141,7 +141,11 @@ UI → useCart() → CartContext → dispatch → cartReducer
 
 ## การแบ่งหน้าที่
 
-บทบาทและไฟล์ที่เกี่ยวข้องสรุปไว้ใน [`docs/contribution-summary.md`](docs/contribution-summary.md) โดยเอกสารของสมาชิกแต่ละคนเชื่อมโยงกับส่วนของ Source Code ที่รับผิดชอบศึกษา อธิบาย และตรวจสอบ
+บทบาทและไฟล์ที่เกี่ยวข้องสรุปไว้ใน [`docs/contribution-summary.md`](docs/contribution-summary.md) พร้อมเอกสารรายบุคคลที่ตั้งชื่อไฟล์ตามชื่อนักศึกษา แต่ละไฟล์อธิบายฟังก์ชัน หลักการทำงาน ตัวอย่างโค้ด เหตุผลที่เลือกใช้ ข้อดี และข้อจำกัดจาก Source Code จริงของโปรเจกต์
+
+## คำถามอภิปรายท้ายใบงาน
+
+คำตอบคำถามอภิปรายทั้ง 4 ข้อ พร้อมการอธิบายที่เชื่อมโยงกับ Source Code จริงของโปรเจกต์ อยู่ในไฟล์ [`docs/discussion-answers.md`](docs/discussion-answers.md)
 
 ## ผู้จัดทำและ Repository
 
