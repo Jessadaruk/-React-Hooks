@@ -1,3 +1,4 @@
+![หน้าจอระบบร้านกาแฟ](https://github.com/Jessadaruk/-React-Hooks/blob/master/docs/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99.png)
 # Coffee Shop Ordering System using React Hooks
 
 เว็บแอปพลิเคชันหน้าเดียวสำหรับเลือกรายการเครื่องดื่มและขนมของร้าน **Hearth & Bean Coffee** ผู้ใช้ค้นหาและกรองเมนู เพิ่มสินค้า ปรับจำนวน ดูยอดรวม และเก็บตะกร้าไว้ในเบราว์เซอร์ได้ ออกแบบให้ใช้งานได้ตั้งแต่โทรศัพท์มือถือถึงจอเดสก์ท็อป
@@ -149,6 +150,6 @@ UI → useCart() → CartContext → dispatch → cartReducer
 
 ## ผู้จัดทำและ Repository
 
-- ชื่อผู้จัดทำ: `[ชื่อ-นามสกุล]`
-- รหัสนักศึกษา: `[รหัสนักศึกษา]`
-- GitHub Repository: `[GitHub URL]`
+- ชื่อผู้จัดทำ: `[นาย เจษฎารักษ์ วิชาไชย]`
+- รหัสนักศึกษา: `[673450207-3]`
+- GitHub Repository: `[https://github.com/Jessadaruk/-React-Hooks]`
