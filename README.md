@@ -150,6 +150,6 @@ UI → useCart() → CartContext → dispatch → cartReducer
 
 ## ผู้จัดทำและ Repository
 
-- ชื่อผู้จัดทำ: `[ชื่อ-นามสกุล]`
-- รหัสนักศึกษา: `[รหัสนักศึกษา]`
-- GitHub Repository: `[GitHub URL]`
+- ชื่อผู้จัดทำ: `[นาย เจษฎารักษ์ วิชาไชย]`
+- รหัสนักศึกษา: `[673450207-3]`
+- GitHub Repository: `[https://github.com/Jessadaruk/-React-Hooks]`
