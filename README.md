@@ -49,12 +49,12 @@
 ```text
 coffee-shop-ordering-system/
 ├── docs/
-│   ├── hooks-explanation.md
+│   ├── อธิบายhooks.md
 │   ├── เจษฎารักษ์-วิชาไชย.md
 │   ├── โสภณวิชญ์-แก้วศิลา.md
 │   ├── ปลวัชร-สุทธมา.md
-│   ├── contribution-summary.md
-│   └── discussion-answers.md
+│   ├── สรุปเอกสารและความรับผิดชอบ.md
+│   └── คำถามท้ายใบงาน.md
 ├── src/
 │   ├── components/
 │   ├── context/CartContext.jsx
